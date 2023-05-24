@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root{
+    --black:#000;
+    --lil-green:#D0DEBF;
+    --green3:#A1BD92;
+    --green2:#729B64;
+    --main-color:#437A37;
+    --white: #FFFFED;
+    --placeholder: #686F60;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+html{
+    height: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
+    background: var(--white);
+}
+
+.cadastro{
+    text-align: center;
+    height: 100%;
+}
+
+.cadastro .formulario{
+    height: 35%;
+    background: var(--lil-green);
+    margin: 0 35%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.cadastro .formulario h1{
+    margin: 0 0.5rem;
+    padding: 1.5rem 3rem 2.5rem 3rem;
+    font-size: 24px;
+}
+
+.cadastro .formulario .textos{
+    text-align: none;
+    display: flex;
+    flex-flow: column;
+}
+
+.cadastro .formulario .textos input{
+    background: var(--lil-green);
+    margin: 1rem;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.cadastro .formulario .textos button{
+    cursor: pointer;
+    margin: 0 2rem;
+    height: 4rem;
+    border-radius: 12px;
+    background: var(--main-color);
+    color: var(--white);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.cadastro .formulario .textos .confirmar{
+    display: flex;
+    flex-flow: row;
+}
+
+.cadastro .formulario .textos .confirmar input{
+    width: 100%;
+}
+
+.cadastro .formulario .textos .confirmar span{
+    position: absolute;
+    font-size: 18px;
+    right: 36%;
+    bottom: 36.5%;
+}
+
+.cadastro .formulario .textos .login{
+    display: flex;
+    flex-flow: row;
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+.cadastro .formulario .textos .login .lembrar{
+    display: flex;
+    flex-flow: row;
+}
+
+.cadastro .formulario .textos .login .lembrar label{
+    margin-right: 1rem;
+}
+
+.cadastro .formulario .textos .login h3, .cadastro .formulario .textos .login a{
+    font-size: 13px;
+    color: var(--placeholder);
+}
+
+.cadastro .formulario .textos .login a{
+    font-weight: bold;
+    border-bottom: 1.5px solid var(--placeholder);
+}
+
+/*checkbox*/
+.container {
+    cursor: pointer;
+  }
+  
+  .container input {
+    display: none;
+  }
+  
+  .container svg {
+    overflow: visible;
+  }
+  
+  .path {
+    fill: none;
+    stroke: var(--main-color);
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+    stroke-dasharray: 241 9999999;
+    stroke-dashoffset: 0;
+  }
+  
+  .container input:checked ~ svg .path {
+    stroke-dasharray: 70.5096664428711 9999999;
+    stroke-dashoffset: -262.2723388671875;
+  }
+/*Checkbox termina*/
+
+.cadastro .social-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 9%;
+}
